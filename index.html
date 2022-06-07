@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <title>Desafio Form Login</title>
+  </head>
+  <body>
+    <main>
+      <img class="header" src="assets/logo.svg" alt="Logo Camp.in" />
+
+      <div class="header-main">
+        <img src="assets/log-in.svg" alt="Imagem de Login" />
+        <h3>Faça seu login</h3>
+        <p>Entre com suas informações de cadastro.</p>
+      </div>
+
+      <form action="" method="GET">
+        <div class="input-email">
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            name="e-mail"
+            id="email"
+            placeholder="Digite seu e-mail"
+            required
+          />
+        </div>
+
+        <div class="input-senha">
+          <label for="senha">Senha</label>
+          <input
+            type="password"
+            name="senha"
+            id="senha"
+            placeholder="Digite sua senha"
+            required
+          />
+        </div>
+
+        <div class="lembra">
+          <div class="check">
+            <input type="checkbox" name="lembre-me" id="lembre-me" />
+          </div>
+
+          <label for="lembre-me">Lembre-me</label>
+          <a href="#">Esqueci minha senha</a>
+        </div>
+
+        <input type="submit" value="ENTRAR" id="button" />
+        <p>
+          Não tem uma conta?
+          <a href="#">Registre-se</a>
+        </p>
+      </form>
+    </main>
+
+    <aside>
+      <img src="assets/side-image.jpg" alt="Imagem do Carro" />
+    </aside>
+  </body>
+</html>
