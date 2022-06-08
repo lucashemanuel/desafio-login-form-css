@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>Desafio Form Login</title>
   </head>
   <body>
@@ -32,13 +36,21 @@
 
         <div class="input-senha">
           <label for="senha">Senha</label>
-          <input
-            type="password"
-            name="senha"
-            id="senha"
-            placeholder="Digite sua senha"
-            required
-          />
+          <div class="pass">
+            <input
+              type="password"
+              name="senha"
+              id="senha"
+              placeholder="Digite sua senha"
+              required
+            />
+            <img
+              src="assets/eye.svg"
+              alt="Imagem de Revelação"
+              class="eye"
+              onclick="showPassword()"
+            />
+          </div>
         </div>
 
         <div class="lembra">
@@ -61,5 +73,17 @@
     <aside>
       <img src="assets/side-image.jpg" alt="Imagem do Carro" />
     </aside>
+
+    <script type="text/javascript">
+      function showPassword() {
+        var pass = document.querySelector("#senha");
+
+        if (pass.type === "password") {
+          pass.type = "text";
+        } else {
+          pass.type = "password";
+        }
+      }
+    </script>
   </body>
 </html>

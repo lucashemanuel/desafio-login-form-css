@@ -10,6 +10,7 @@
   --form-background: #24221f;
   --primary-color: #ffc632;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -25,12 +26,16 @@ body {
 .header {
   display: flex;
   align-self: flex-start; 
-  padding: 2.7vw;
+  padding: 3.5vw;
   margin-bottom: 10vh;
+  animation: flip;
+  animation-duration: 2s;
 }
 
 aside {
   width: 50vw;
+  animation: slideInRight;
+  animation-duration: 2s;
 }
 
 main {
@@ -42,6 +47,8 @@ main {
 }
 form {
   width: 30vw;
+  animation: slideInLeft;
+  animation-duration: 2s;
 }
 
 .header-main {
@@ -50,7 +57,10 @@ form {
   width: 30vw;
   height: 9.35vh;
   margin-bottom: 7vh;
+  animation: slideInLeft;
+  animation-duration: 2s;
 }
+
 .header-main h3 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
@@ -63,6 +73,7 @@ form {
   color: var(--text-base);
   font-size: 1em;
 }
+
 .input-email {
   display: flex;
   flex-direction: column; 
@@ -80,7 +91,7 @@ form {
   height: 5vh;
   background-color: transparent;
   color: var(--text-base);
-  padding-left: 3.5vw;
+  padding-left: 3.2vw;
 }
 
 #email:focus-within {
@@ -95,31 +106,41 @@ form {
   font-size: 1em;
   color: var(--text-base);
 }
+
 .input-senha {
   display: flex;
   flex-direction: column;
-  border-radius: 2em;
   margin-bottom: 5vh;
 }
 
 #senha {
   background-image: url('../assets/lock.svg');
-  background-position: left;
-  background-position-y: center;
-  background-position-x: 0.7vw;
+  background-position: left center;
+  background-position-x: 2.5%;
   background-repeat: no-repeat;
   border: 0.15em solid var(--text-base);
   border-radius: 0.3em;
+  width: 26.45vw;
   height: 5vh;
   background-color: transparent ;
   color: var(--text-base);
-  padding-left: 3.5vw;
+  padding-left: 3.2vw; 
 }
+.pass {
+  position: relative;
+}
+.eye {
+  position: absolute;
+  top: 1.5vh;
+  right: 1vw;
+  cursor: pointer;
+}
+
 #senha:focus-within {
+  background-image: url('../assets/lock-focus.svg');
   border-color: var(--primary-color);
   outline: none;
   color: var(--primary-color);
-  background-image: url('../assets/lock-focus.svg');
 }
 
 input::placeholder {
@@ -131,6 +152,7 @@ input::placeholder {
   font-size: 1em;
   color: var(--text-base);
 }
+
 .lembra {
   display: flex;
   flex-direction: row;
@@ -185,12 +207,14 @@ input::placeholder {
   height: 7.25vh;
   border-radius: 0.25em;
 }
+
 p {
   font-family: 'Poppins', sans-serif;
   text-align: center; 
   color: var(--primary-color);
   margin-top: 3vh;
 }
+
 p a {
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
