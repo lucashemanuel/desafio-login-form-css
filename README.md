@@ -8,4 +8,4 @@ Você pode acessar o site clicando  nesse link:
 
 Também tenha acesso pelo QR CODE a seguir:
 
-<a href="https://imgbox.com/5JVA39dz" target="_blank"><img src="https://thumbs2.imgbox.com/2f/bb/5JVA39dz_t.png" alt="image host"/></a>
+<a href="https://imgbox.com/5nmFlAr7" target="_blank"><img src="https://thumbs2.imgbox.com/c9/47/5nmFlAr7_t.png" alt="image host"/></a>
