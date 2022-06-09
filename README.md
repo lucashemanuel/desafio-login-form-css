@@ -4,7 +4,7 @@ Esse site é a resolução do Desafio Login Form CSS da Rocketseat.
 
 Você pode acessar o site clicando nesse link: 
 
-<a href="https://lucashemanuel.github.io/desafio-login-form-css/">Clique aqui para acessar o site.</a>
+<a href="https://lucashemanuel.github.io/desafio-login-form-css/" target="_blank">Clique aqui para acessar o site.</a>
 
 Também tenha acesso pelo QR CODE a seguir:
 
