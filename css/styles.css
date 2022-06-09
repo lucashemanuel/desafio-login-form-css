@@ -33,9 +33,13 @@ body {
 }
 
 aside {
-  width: 50vw;
   animation: slideInRight;
   animation-duration: 2s;
+}
+
+aside img {
+  width: 50vw;
+  height: 99.5vh;
 }
 
 main {
